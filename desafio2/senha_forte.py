@@ -1,7 +1,8 @@
 import re
 
+
 def valida_senha(string):
-    '''Verifica regras antes de gerar uma senha forte'''
+    '''Verifica regras antes de gerar uma senha forte.'''
 
     # Variáveis utilizadas
     numero = 0
@@ -11,22 +12,22 @@ def valida_senha(string):
 
     # Verificar existência de números, sai do
     # loop se encontrar pelo menos 1
-    for i in range(0, len(string)):
-        if string[i].isnumeric():
+    for digito in range(0, len(string)):
+        if string[digito].isnumeric():
             numero += 1
             break
 
     # Verifica existência de letra em maiúsculo,
     # sai do loop se encontrar pelo menos 1
-    for i in range(0, len(string)):
-        if string[i].isupper():
+    for digito in range(0, len(string)):
+        if string[digito].isupper():
             maiusculo += 1
             break
 
     # Verifica existência de letra em minúsculo,
     # sai do loop se encontrar pelo menos 1
-    for i in range(0, len(string)):
-        if string[i].islower():
+    for digito in range(0, len(string)):
+        if string[digito].islower():
             minusculo += 1
             break
 
